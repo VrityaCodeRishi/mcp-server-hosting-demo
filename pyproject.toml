@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcp-server"
+version = "0.1.0"
+description = "MCP server for deployment operations"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "mcp",
+]
+
+[project.scripts]
+mcp-deployment = "src.__main__:main"
+
+[tool.hatchling.build]
+packages = ["src"]
+
