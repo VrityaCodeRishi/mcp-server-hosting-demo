@@ -15,6 +15,6 @@ dependencies = [
 [project.scripts]
 mcp-deployment = "src.__main__:main"
 
-[tool.hatchling.build]
+[tool.hatch.build.targets.wheel]
 packages = ["src"]
 
